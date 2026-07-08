@@ -301,56 +301,53 @@ h1, h2, h3 {
   align-items: start;
 }
 
-.contact-form {
+.contact-cta {
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  padding: 2rem 1.75rem;
+  padding: 2.5rem 2rem;
 }
 
-.contact-form .form-row { margin-bottom: 1.15rem; }
+.whatsapp-badge {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background: #25d366;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
 
-.form-row-2col {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.whatsapp-badge svg { width: 2rem; height: 2rem; }
+
+.contact-cta h3 { font-size: 1.35rem; margin-bottom: 0.75rem; }
+
+.contact-cta-text {
+  color: var(--ink-soft);
+  margin-bottom: 1.75rem;
+  max-width: 30rem;
+}
+
+.contact-cta-actions {
+  display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
-.contact-form label {
-  display: block;
-  font-size: 0.88rem;
-  font-weight: 600;
-  margin-bottom: 0.35rem;
-  color: var(--ink);
+.btn-whatsapp {
+  background: #25d366;
+  color: #fff;
 }
 
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 0.7rem 0.9rem;
-  border: 1px solid var(--line);
-  border-radius: calc(var(--radius) - 3px);
-  font: inherit;
-  color: var(--ink);
-  background: #fffdf8;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  outline: 2px solid var(--sepia);
-  outline-offset: 1px;
-  border-color: var(--sepia);
-}
-
-.contact-form textarea { resize: vertical; }
+.btn-whatsapp:hover { background: #1eb857; color: #fff; }
 
 .form-note {
-  margin-top: 0.9rem;
+  margin-top: 1.25rem;
   font-size: 0.82rem;
   color: var(--ink-soft);
 }
-
-.hidden-field { display: none; }
 
 .contact-info h3 { font-size: 1.15rem; margin-bottom: 1.25rem; }
 
@@ -404,19 +401,6 @@ h1, h2, h3 {
   color: rgba(246, 241, 230, 0.5);
 }
 
-/* ---------- Thank-you page ---------- */
-
-.thanks-page {
-  min-height: 60vh;
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
-
-.thanks-page .container { max-width: 40rem; }
-.thanks-page h1 { margin-bottom: 1rem; }
-.thanks-page p { color: var(--ink-soft); margin-bottom: 2rem; }
-
 /* ---------- Mobile ---------- */
 
 @media (max-width: 760px) {
@@ -453,7 +437,6 @@ h1, h2, h3 {
   .hero { padding: 4.5rem 0 4rem; }
 
   .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
-  .form-row-2col { grid-template-columns: 1fr; gap: 1.15rem; }
 
   .section { padding: 3.5rem 0; }
 }
