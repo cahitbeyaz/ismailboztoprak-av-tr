@@ -312,7 +312,7 @@ h1, h2, h3 {
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 50%;
-  background: #25d366;
+  background: #5e8a68;
   color: #fff;
   display: flex;
   align-items: center;
@@ -337,11 +337,11 @@ h1, h2, h3 {
 }
 
 .btn-whatsapp {
-  background: #25d366;
+  background: #5e8a68;
   color: #fff;
 }
 
-.btn-whatsapp:hover { background: #1eb857; color: #fff; }
+.btn-whatsapp:hover { background: #4d7356; color: #fff; }
 
 .form-note {
   margin-top: 1.25rem;
