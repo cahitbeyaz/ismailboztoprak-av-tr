@@ -8,6 +8,12 @@
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'analytics_storage': 'denied'
+    });
     gtag('js', new Date());
     gtag('config', 'G-ZBFX43L5FC');
   </script>
@@ -226,6 +232,14 @@
       <p class="footer-disclaimer">Bu sitedeki bilgiler hukuki tavsiye niteliği taşımaz; yalnızca bilgilendirme amaçlıdır.</p>
     </div>
   </footer>
+
+  <div class="consent-banner" id="consent-banner" hidden>
+    <p>Bu sitede ziyaret istatistiklerini ölçmek için çerezler kullanılmaktadır. "Kabul Et"e tıklarsanız Google Analytics çerezleri etkinleştirilir.</p>
+    <div class="consent-actions">
+      <button type="button" class="btn btn-primary" id="consent-accept">Kabul Et</button>
+      <button type="button" class="btn btn-ghost" id="consent-reject">Reddet</button>
+    </div>
+  </div>
 
   <script src="js/main.js"></script>
 </body>
